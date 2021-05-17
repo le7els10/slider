@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bbb;
+}
+
+body .slidershow {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+}
+
+body .slidershow .slides {
+  width: 500%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .slidershow .slides .slide {
+  width: 20%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+body .slidershow .slides .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+body .slidershow .slides input {
+  position: absolute;
+  visibility: hidden;
+}
+
+body .slidershow .navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .slidershow .navigation .bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .slidershow .navigation .bar:hover {
+  background-color: #fff;
+}
+
+body .slidershow.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body #r1:checked ~ .s1 {
+  margin-left: 0%;
+}
+
+body #r2:checked ~ .s2 {
+  margin-left: -20%;
+}
+
+body #r3:checked ~ .s3 {
+  margin-left: -40%;
+}
+
+body #r4:checked ~ .s4 {
+  margin-left: -60%;
+}
+/*# sourceMappingURL=global.css.map */
